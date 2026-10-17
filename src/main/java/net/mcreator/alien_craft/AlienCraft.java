@@ -18,8 +18,8 @@ import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -58,7 +58,7 @@ public final class AlienCraft {
     public static final RegistryObject<Block> PLATINUMORE = block("platinumore", 3.0f);
     public static final RegistryObject<Block> TUBE = block("tube", 2.0f);
     public static final RegistryObject<Block> ALIENPLANETSELECTOR = block("alienplanetselector", 3.0f);
-    public static final RegistryObject<Block> DOOR = BLOCKS.register("door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).strength(3.0f).noOcclusion()));
+    public static final RegistryObject<Block> DOOR = BLOCKS.register("door", () -> new DoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).sound(SoundType.WOOD).strength(3.0f).noOcclusion()));
     public static final RegistryObject<Item> DOOR_ITEM = ITEMS.register("door", () -> new BlockItem(DOOR.get(), new Item.Properties()));
     public static final RegistryObject<Item> ALIENFLOORSTAIRS_ITEM = ITEMS.register("alienfloorstairs", () -> new BlockItem(ALIENFLOORSTAIRS.get(), new Item.Properties()));
     public static final RegistryObject<Item> ALIENFLOWER_ITEM = ITEMS.register("alienflower", () -> new BlockItem(ALIENFLOWER.get(), new Item.Properties()));

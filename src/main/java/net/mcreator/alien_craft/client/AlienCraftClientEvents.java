@@ -1,9 +1,10 @@
 package net.mcreator.alien_craft.client;
 
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.entity.ZombieRenderer;
+import net.minecraft.client.model.ModelLayers;
+import net.minecraft.client.model.ZombieModel;
+import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.EntityType;
 import net.mcreator.alien_craft.AlienCraft;
 import net.mcreator.alien_craft.AlienEntity;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,11 +25,11 @@ public final class AlienCraftClientEvents {
         event.registerEntityRenderer(AlienCraft.ZOMBIEALIEN_ENTITY.get(), context -> new AlienRenderer(context, "zombiealien"));
     }
 
-    private static final class AlienRenderer extends ZombieRenderer<AlienEntity> {
+    private static final class AlienRenderer extends MobRenderer<AlienEntity, ZombieModel<AlienEntity>> {
         private final ResourceLocation texture;
 
         private AlienRenderer(EntityRendererProvider.Context context, String textureName) {
-            super(context);
+            super(context, new ZombieModel<>(context.bakeLayer(ModelLayers.ZOMBIE)), 0.5F);
             texture = new ResourceLocation(AlienCraft.MOD_ID, "textures/" + textureName + ".png");
         }
 

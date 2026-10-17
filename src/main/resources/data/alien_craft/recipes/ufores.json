@@ -18,7 +18,7 @@
   "category": "misc",
   "type": "minecraft:crafting_shaped",
   "result": {
-    "id": "alien_craft:ufoicon",
+    "item": "alien_craft:ufoicon",
     "count": 1
   }
 }

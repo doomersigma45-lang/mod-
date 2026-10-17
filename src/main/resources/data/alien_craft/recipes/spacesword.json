@@ -21,7 +21,7 @@
   "category": "equipment",
   "type": "minecraft:crafting_shaped",
   "result": {
-    "id": "alien_craft:spacesword2",
+    "item": "alien_craft:spacesword2",
     "count": 1
   }
 }

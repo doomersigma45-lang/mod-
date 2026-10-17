@@ -12,7 +12,7 @@
   "category": "building",
   "type": "minecraft:crafting_shaped",
   "result": {
-    "id": "alien_craft:alienfloorstairs",
+    "item": "alien_craft:alienfloorstairs",
     "count": 4
   }
 }

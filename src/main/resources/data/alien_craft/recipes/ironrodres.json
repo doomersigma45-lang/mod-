@@ -11,7 +11,7 @@
   "category": "misc",
   "type": "minecraft:crafting_shaped",
   "result": {
-    "id": "alien_craft:ironrod",
+    "item": "alien_craft:ironrod",
     "count": 4
   }
 }

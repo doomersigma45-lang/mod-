@@ -10,7 +10,7 @@
   "category": "misc",
   "type": "minecraft:crafting_shaped",
   "result": {
-    "id": "alien_craft:platinumplate",
+    "item": "alien_craft:platinumplate",
     "count": 4
   }
 }

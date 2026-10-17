@@ -1,7 +1,11 @@
 package net.mcreator.alien_craft;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.block.Block;
@@ -24,6 +28,7 @@ public final class AlienCraft {
     public static final String MOD_ID = "alien_craft";
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MOD_ID);
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
+    private static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
     private static RegistryObject<Block> block(String id, float hardness) {
         RegistryObject<Block> result = BLOCKS.register(id, () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).strength(hardness)));
@@ -63,9 +68,16 @@ public final class AlienCraft {
     public static final RegistryObject<Item> ZOMBIEALIEN = item("zombiealien");
     public static final RegistryObject<Item> UFO = item("ufo");
 
+    public static final RegistryObject<CreativeModeTab> MAIN_TAB = TABS.register("main", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.alien_craft"))
+            .icon(() -> new ItemStack(PLATINUMINGOT.get()))
+            .displayItems((parameters, output) -> ITEMS.getEntries().forEach(entry -> output.accept(entry.get())))
+            .build());
+
     public AlienCraft() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         BLOCKS.register(modBus);
         ITEMS.register(modBus);
+        TABS.register(modBus);
     }
 }

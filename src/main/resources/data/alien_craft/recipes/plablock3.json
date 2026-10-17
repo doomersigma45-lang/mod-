@@ -1,24 +1,15 @@
 {
-  "group": "alien_craft",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "01",
-    "23"
-  ],
   "key": {
-    "0": {
-      "item": "alien_craft:alienfloor"
-    },
-    "1": {
-      "item": "alien_craft:alienfloor"
-    },
-    "2": {
-      "item": "alien_craft:alienfloor"
-    },
-    "3": {
+    "F": {
       "item": "alien_craft:alienfloor"
     }
   },
+  "pattern": [
+    "FF",
+    "FF"
+  ],
+  "category": "building",
+  "type": "minecraft:crafting_shaped",
   "result": {
     "id": "alien_craft:blockofsteel",
     "count": 4

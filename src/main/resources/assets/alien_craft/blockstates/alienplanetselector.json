@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "alien_craft:alienplanetselector"
+      "model": "alien_craft:block/alienplanetselector"
     }
   }
 }

@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        },
+        {
+          "block": "alien_craft:door",
+          "properties": {
+            "half": "lower"
+          },
+          "condition": "minecraft:block_state_property"
+        }
+      ],
+      "entries": [
+        {
+          "name": "alien_craft:door",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "type": "minecraft:block"
+}

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "alien_craft:blockofsteel"
+      "model": "alien_craft:block/blockofsteel"
     }
   }
 }

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "name": "alien_craft:alienplanetselector",
+          "type": "minecraft:item"
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:block"
+}

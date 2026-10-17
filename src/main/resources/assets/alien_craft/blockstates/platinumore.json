@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "alien_craft:platinumore"
+      "model": "alien_craft:block/platinumore"
     }
   }
 }

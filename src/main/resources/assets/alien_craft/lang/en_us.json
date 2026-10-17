@@ -26,5 +26,10 @@
   "item.alien_craft.longalien": "Long Alien Spawn Egg",
   "item.alien_craft.longlaienguard": "Long Alien Guard Spawn Egg",
   "item.alien_craft.zombiealien": "Zombie Alien Spawn Egg",
+  "item.alien_craft.alien_spawn_egg": "Alien Spawn Egg",
+  "item.alien_craft.aliencivil_spawn_egg": "Alien Civilian Spawn Egg",
+  "item.alien_craft.longalien_spawn_egg": "Long Alien Spawn Egg",
+  "item.alien_craft.longlaienguard_spawn_egg": "Long Alien Guard Spawn Egg",
+  "item.alien_craft.zombiealien_spawn_egg": "Zombie Alien Spawn Egg",
   "item.alien_craft.ufo": "UFO"
 }

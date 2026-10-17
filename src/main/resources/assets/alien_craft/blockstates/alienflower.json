@@ -1,7 +1,1 @@
-{
-  "variants": {
-    "type=dandelion": {
-      "model": "alien_craft:alienflower"
-    }
-  }
-}
+{"variants":{"":{"model":"alien_craft:block/alienflower"}}}

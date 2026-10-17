@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "alien_craft:alienleaves"
+      "model": "alien_craft:block/alienleaves"
     }
   }
 }

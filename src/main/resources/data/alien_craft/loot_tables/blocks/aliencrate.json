@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "functions": [
+            {
+              "function": "minecraft:copy_name",
+              "source": "block_entity"
+            },
+            {
+              "source": "block_entity",
+              "ops": [
+                {
+                  "source": "Items",
+                  "target": "BlockEntityTag.Items"
+                }
+              ],
+              "function": "minecraft:copy_nbt"
+            }
+          ],
+          "type": "minecraft:item",
+          "name": "alien_craft:aliencrate"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "type": "minecraft:block"
+}

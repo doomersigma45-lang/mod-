@@ -1,34 +1,25 @@
 {
-  "group": "alien_craft",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "012",
-    " 4 ",
-    "678"
-  ],
   "key": {
-    "0": {
-      "item": "minecraft:diamond"
-    },
-    "1": {
-      "item": "alien_craft:darkmatter"
-    },
-    "2": {
-      "item": "minecraft:diamond"
-    },
-    "4": {
-      "item": "alien_craft:darkmatter"
-    },
-    "6": {
-      "item": "minecraft:emerald"
-    },
-    "7": {
+    "I": {
       "item": "alien_craft:ironrod"
     },
-    "8": {
+    "E": {
+      "item": "alien_craft:darkmatter"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "R": {
       "item": "minecraft:emerald"
     }
   },
+  "pattern": [
+    "DED",
+    " E ",
+    "RIR"
+  ],
+  "category": "equipment",
+  "type": "minecraft:crafting_shaped",
   "result": {
     "id": "alien_craft:spacesword2",
     "count": 1

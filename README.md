@@ -8,4 +8,4 @@ Install a Java 17 JDK. From this directory run `gradlew.bat build` on Windows or
 
 ## Port status
 
-The legacy dimension providers, teleport GUI, custom entity AI/models, UFO vehicle behavior, and several block interactions depended on removed 1.12.2 APIs. They are not represented as working features in this initial rebuild. The old art assets are retained for subsequent implementation. This project is a non-commercial fan port; keep `MCreator-README.txt` with any distribution and retain MCreator attribution.
+The port now includes custom alien spawn-egg entities rendered with the original alien textures, functional door and storage-crate blocks, block drops, and updated crafting recipes. Their body model and AI are simplified compared with the 1.12.2 originals. The legacy dimension providers, teleport GUI, and UFO vehicle behavior still need a separate port. This project is a non-commercial fan port; keep `MCreator-README.txt` with any distribution and retain MCreator attribution.

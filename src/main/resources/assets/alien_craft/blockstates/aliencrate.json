@@ -1,7 +1,34 @@
 {
   "variants": {
-    "": {
-      "model": "alien_craft:aliencrate"
+    "facing=north,open=false": {
+      "model": "alien_craft:block/aliencrate"
+    },
+    "facing=north,open=true": {
+      "model": "alien_craft:block/aliencrate"
+    },
+    "facing=east,open=false": {
+      "model": "alien_craft:block/aliencrate",
+      "y": 90
+    },
+    "facing=east,open=true": {
+      "model": "alien_craft:block/aliencrate",
+      "y": 90
+    },
+    "facing=south,open=false": {
+      "model": "alien_craft:block/aliencrate",
+      "y": 180
+    },
+    "facing=south,open=true": {
+      "model": "alien_craft:block/aliencrate",
+      "y": 180
+    },
+    "facing=west,open=false": {
+      "model": "alien_craft:block/aliencrate",
+      "y": 270
+    },
+    "facing=west,open=true": {
+      "model": "alien_craft:block/aliencrate",
+      "y": 270
     }
   }
 }

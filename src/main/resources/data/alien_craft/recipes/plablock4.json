@@ -1,31 +1,16 @@
 {
-  "group": "alien_craft",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "  2",
-    " 45",
-    "678"
-  ],
   "key": {
-    "2": {
-      "item": "alien_craft:alienfloor"
-    },
-    "4": {
-      "item": "alien_craft:alienfloor"
-    },
-    "5": {
-      "item": "alien_craft:alienfloor"
-    },
-    "6": {
-      "item": "alien_craft:alienfloor"
-    },
-    "7": {
-      "item": "alien_craft:alienfloor"
-    },
-    "8": {
+    "A": {
       "item": "alien_craft:alienfloor"
     }
   },
+  "pattern": [
+    "  A",
+    " AA",
+    "AAA"
+  ],
+  "category": "building",
+  "type": "minecraft:crafting_shaped",
   "result": {
     "id": "alien_craft:alienfloorstairs",
     "count": 4

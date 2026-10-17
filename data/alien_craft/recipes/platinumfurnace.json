@@ -1,0 +1,12 @@
+{
+  "group": "alien_craft",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "ingredient": {
+    "item": "alien_craft:platinumore"
+  },
+  "result": {
+    "id": "alien_craft:platinumingot",
+    "count": 1
+  }
+}

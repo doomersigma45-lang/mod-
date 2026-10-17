@@ -1,0 +1,16 @@
+{
+  "group": "alien_craft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "alien_craft:platinumingot"
+    }
+  },
+  "result": {
+    "id": "alien_craft:platinumplate",
+    "count": 4
+  }
+}

@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MCreator Mod Distribution License 1.0; non-commercial distribution only"
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+credits="Port based on Alien Craft 1.4.1 by Martijn; originally made with MCreator"
+authors="Martijn, MCreator; 1.20.1 port"
+description='''Alien Craft content port for Minecraft 1.20.1 Forge. Original MCreator license and credits are retained.'''
+[[dependencies.${mod_id}]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,345 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "Lightning Sword",
+  "elements": [
+    {
+      "from": [
+        7,
+        0,
+        7
+      ],
+      "to": [
+        8,
+        3,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            6,
+            1,
+            7,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            6,
+            1,
+            7,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        3,
+        6
+      ],
+      "to": [
+        8,
+        3,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            6,
+            1,
+            7,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            6,
+            1,
+            7,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        3,
+        7
+      ],
+      "to": [
+        9,
+        3,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            6,
+            1,
+            7,
+            4
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            6,
+            1,
+            7,
+            2
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            6,
+            1,
+            7,
+            2
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        3,
+        7
+      ],
+      "to": [
+        8,
+        17,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            1,
+            1,
+            4
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            1,
+            1,
+            4
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            0,
+            1,
+            1,
+            4
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            0,
+            1,
+            1,
+            4
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0,
+            1,
+            1,
+            4
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            0,
+            1,
+            1,
+            4
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0.5,
+        6,
+        1.5
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        -0.5,
+        5.75,
+        1.75
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        1,
+        6.25,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        1,
+        6.25,
+        0
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        5.5,
+        0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        0,
+        -71.75,
+        -34.25
+      ]
+    },
+    "fixed": {
+      "translation": [
+        1,
+        0,
+        0
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "Lightning Sword",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "children": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

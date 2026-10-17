@@ -1,0 +1,30 @@
+name: Build Forge mod
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Build mod
+        run: ./gradlew --no-daemon build
+      - name: Upload mod JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: AlienCraft-Forge-1.20.1
+          path: build/libs/*.jar

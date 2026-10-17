@@ -1,0 +1,30 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+}
+
+group = 'net.mcreator'
+version = '1.4.1-1.20.1'
+base { archivesName = 'AlienCraft-1.4.1-1.20.1' }
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    copyIdeResources = true
+    runs {
+        configureEach { workingDirectory project.file('run'); mods { alien_craft { source sourceSets.main } } }
+        client { property 'forge.logging.console.level', 'info' }
+        server { property 'forge.logging.console.level', 'info'; args '--nogui' }
+    }
+}
+repositories { }
+dependencies { minecraft 'net.minecraftforge:forge:1.20.1-47.2.0' }
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+processResources {
+    def props = [mod_id: 'alien_craft', mod_name: 'Alien Craft', mod_version: project.version]
+    inputs.properties props
+    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) { expand props }
+}

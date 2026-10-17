@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alien_craft:blocks/alienfloor2",
+    "up": "alien_craft:blocks/alienfloor2",
+    "north": "alien_craft:blocks/alienfloor2",
+    "east": "alien_craft:blocks/alienfloor2",
+    "south": "alien_craft:blocks/alienfloor2",
+    "west": "alien_craft:blocks/alienfloor2",
+    "particle": "alien_craft:blocks/alienfloor2"
+  }
+}

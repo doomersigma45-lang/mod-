@@ -1,0 +1,11 @@
+{
+  "parent": "alien_craft:custom/alienflower",
+  "textures": {
+    "all": "alien_craft:blocks/alienflower",
+    "particle": "alien_craft:blocks/alienflower",
+    "alienleaves": "alien_craft:blocks/alienleaves",
+    "AlienPlant2": "alien_craft:blocks/alienplant2",
+    "AlienPlant1": "alien_craft:blocks/alienplant1",
+    "alienleaves2": "alien_craft:blocks/alienleaves2"
+  }
+}

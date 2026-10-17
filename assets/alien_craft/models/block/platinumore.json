@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alien_craft:blocks/platinumore",
+    "up": "alien_craft:blocks/platinumore",
+    "north": "alien_craft:blocks/platinumore",
+    "east": "alien_craft:blocks/platinumore",
+    "south": "alien_craft:blocks/platinumore",
+    "west": "alien_craft:blocks/platinumore",
+    "particle": "alien_craft:blocks/platinumore"
+  }
+}

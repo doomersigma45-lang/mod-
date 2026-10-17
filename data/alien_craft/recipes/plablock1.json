@@ -1,0 +1,26 @@
+{
+  "group": "alien_craft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "alien_craft:platinumplate"
+    },
+    "1": {
+      "item": "alien_craft:platinumplate"
+    },
+    "2": {
+      "item": "alien_craft:platinumplate"
+    },
+    "3": {
+      "item": "alien_craft:platinumplate"
+    }
+  },
+  "result": {
+    "id": "alien_craft:blockofsteel",
+    "count": 4
+  }
+}

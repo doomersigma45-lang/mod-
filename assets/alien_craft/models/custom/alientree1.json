@@ -1,0 +1,880 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "Cube",
+      "from": [
+        -2,
+        0,
+        -2
+      ],
+      "to": [
+        18,
+        20,
+        18
+      ],
+      "faces": {
+        "north": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        7,
+        0,
+        8
+      ],
+      "to": [
+        7,
+        20,
+        28
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        7,
+        0,
+        8
+      ],
+      "to": [
+        7,
+        20,
+        28
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        7,
+        0,
+        8
+      ],
+      "to": [
+        27,
+        20,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        7,
+        0,
+        8
+      ],
+      "to": [
+        27,
+        20,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        7,
+        0,
+        8
+      ],
+      "to": [
+        27,
+        20,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        7,
+        0,
+        -11
+      ],
+      "to": [
+        7,
+        20,
+        9
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        7,
+        0,
+        -11
+      ],
+      "to": [
+        7,
+        20,
+        9
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        -11,
+        0,
+        8
+      ],
+      "to": [
+        9,
+        20,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": 22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        -11,
+        0,
+        8
+      ],
+      "to": [
+        9,
+        20,
+        8
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          8,
+          8
+        ],
+        "axis": "y",
+        "angle": -22.5
+      },
+      "faces": {
+        "north": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#alienleaves2",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            0,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#alienleaves",
+          "uv": [
+            0,
+            0,
+            16,
+            0
+          ]
+        }
+      }
+    }
+  ]
+}

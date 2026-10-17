@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "alien_craft:blocks/trans",
+    "up": "alien_craft:blocks/trans",
+    "north": "alien_craft:blocks/holodoor2",
+    "east": "alien_craft:blocks/holodoor2",
+    "south": "alien_craft:blocks/holodoor2",
+    "west": "alien_craft:blocks/holodoor2",
+    "particle": "alien_craft:blocks/trans"
+  }
+}

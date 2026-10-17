@@ -1,0 +1,406 @@
+{
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        315,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "Cube",
+      "from": [
+        4,
+        0,
+        6
+      ],
+      "to": [
+        5,
+        10,
+        7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#AlienPlant2",
+          "uv": [
+            0,
+            0,
+            1,
+            10
+          ]
+        },
+        "east": {
+          "texture": "#AlienPlant2",
+          "uv": [
+            0,
+            0,
+            1,
+            10
+          ]
+        },
+        "south": {
+          "texture": "#AlienPlant2",
+          "uv": [
+            0,
+            0,
+            1,
+            10
+          ]
+        },
+        "west": {
+          "texture": "#AlienPlant2",
+          "uv": [
+            0,
+            0,
+            2,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#AlienPlant2",
+          "uv": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        3,
+        9,
+        5
+      ],
+      "to": [
+        6,
+        12,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "east": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "west": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "up": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "down": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        4,
+        10,
+        6
+      ],
+      "to": [
+        5,
+        14,
+        7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            1,
+            4
+          ]
+        },
+        "east": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "south": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            4
+          ]
+        },
+        "west": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            1,
+            4
+          ]
+        },
+        "up": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        3,
+        13,
+        5
+      ],
+      "to": [
+        6,
+        13,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        "up": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "down": {
+          "texture": "#AlienPlant1",
+          "uv": [
+            0,
+            0,
+            3,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        5,
+        0,
+        7
+      ],
+      "to": [
+        5,
+        8,
+        11
+      ],
+      "faces": {
+        "east": {
+          "texture": "#alienleaves",
+          "uv": [
+            5,
+            0,
+            9,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#alienleaves2",
+          "uv": [
+            7,
+            0,
+            11,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [
+        1,
+        0,
+        6
+      ],
+      "to": [
+        4,
+        8,
+        6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#alienleaves2",
+          "uv": [
+            8,
+            0,
+            11,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#alienleaves",
+          "uv": [
+            6,
+            0,
+            9,
+            8
+          ]
+        }
+      }
+    }
+  ]
+}

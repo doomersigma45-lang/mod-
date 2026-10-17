@@ -1,0 +1,30 @@
+{
+  "group": "alien_craft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "tag": "forge:stained_glass"
+    },
+    "3": {
+      "item": "minecraft:iron_block"
+    },
+    "4": {
+      "item": "minecraft:iron_block"
+    },
+    "5": {
+      "item": "minecraft:iron_block"
+    },
+    "7": {
+      "item": "alien_craft:darkmatter"
+    }
+  },
+  "result": {
+    "id": "alien_craft:ufoicon",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "group": "alien_craft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "alien_craft:ironrod",
+    "count": 4
+  }
+}

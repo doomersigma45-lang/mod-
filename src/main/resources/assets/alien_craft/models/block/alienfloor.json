@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "alien_craft:blocks/alienfloor2",
-    "up": "alien_craft:blocks/alienfloor2",
-    "north": "alien_craft:blocks/alienfloor2",
-    "east": "alien_craft:blocks/alienfloor2",
-    "south": "alien_craft:blocks/alienfloor2",
-    "west": "alien_craft:blocks/alienfloor2",
-    "particle": "alien_craft:blocks/alienfloor2"
+    "down": "alien_craft:block/alienfloor2",
+    "up": "alien_craft:block/alienfloor2",
+    "north": "alien_craft:block/alienfloor2",
+    "east": "alien_craft:block/alienfloor2",
+    "south": "alien_craft:block/alienfloor2",
+    "west": "alien_craft:block/alienfloor2",
+    "particle": "alien_craft:block/alienfloor2"
   }
 }

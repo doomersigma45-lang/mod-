@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "alien_craft:items/ironrod"
+    "layer0": "alien_craft:item/ironrod"
   }
 }

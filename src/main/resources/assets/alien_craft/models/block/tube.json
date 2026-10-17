@@ -1,8 +1,8 @@
 {
   "parent": "alien_craft:custom/pipe",
   "textures": {
-    "all": "alien_craft:blocks/holodoor3",
-    "particle": "alien_craft:blocks/holodoor3",
-    "Pipe1": "alien_craft:blocks/holodoor3"
+    "all": "alien_craft:block/holodoor3",
+    "particle": "alien_craft:block/holodoor3",
+    "Pipe1": "alien_craft:block/holodoor3"
   }
 }

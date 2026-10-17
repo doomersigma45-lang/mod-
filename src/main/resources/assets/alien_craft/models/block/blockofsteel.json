@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "alien_craft:blocks/warpblock",
-    "up": "alien_craft:blocks/warpblock",
-    "north": "alien_craft:blocks/warpblock",
-    "east": "alien_craft:blocks/warpblock",
-    "south": "alien_craft:blocks/warpblock",
-    "west": "alien_craft:blocks/warpblock",
-    "particle": "alien_craft:blocks/warpblock"
+    "down": "alien_craft:block/warpblock",
+    "up": "alien_craft:block/warpblock",
+    "north": "alien_craft:block/warpblock",
+    "east": "alien_craft:block/warpblock",
+    "south": "alien_craft:block/warpblock",
+    "west": "alien_craft:block/warpblock",
+    "particle": "alien_craft:block/warpblock"
   }
 }

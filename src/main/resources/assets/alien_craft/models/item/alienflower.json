@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "alien_craft:blocks/alienflower"
+    "layer0": "alien_craft:block/alienflower"
   }
 }

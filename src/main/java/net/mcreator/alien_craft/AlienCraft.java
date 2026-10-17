@@ -6,6 +6,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SpawnEggItem;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.block.Block;
@@ -61,12 +63,12 @@ public final class AlienCraft {
     public static final RegistryObject<Item> ALIENSWORD = ITEMS.register("aliensword", () -> new SwordItem(Tiers.DIAMOND, 3, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> LIGHTNINGSWORD = ITEMS.register("lightningsword", () -> new SwordItem(Tiers.DIAMOND, 4, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> SPACESWORD2 = ITEMS.register("spacesword2", () -> new SwordItem(Tiers.NETHERITE, 5, -2.4f, new Item.Properties()));
-    public static final RegistryObject<Item> ALIEN = item("alien");
-    public static final RegistryObject<Item> ALIENCIVIL = item("aliencivil");
-    public static final RegistryObject<Item> LONGALIEN = item("longalien");
-    public static final RegistryObject<Item> LONGLAIENGUARD = item("longlaienguard");
-    public static final RegistryObject<Item> ZOMBIEALIEN = item("zombiealien");
-    public static final RegistryObject<Item> UFO = item("ufo");
+    public static final RegistryObject<Item> ALIEN = ITEMS.register("alien", () -> new SpawnEggItem(EntityType.ENDERMAN, 0x3A164A, 0xA9F000, new Item.Properties()));
+    public static final RegistryObject<Item> ALIENCIVIL = ITEMS.register("aliencivil", () -> new SpawnEggItem(EntityType.VILLAGER, 0x7352A0, 0xC9B3E8, new Item.Properties()));
+    public static final RegistryObject<Item> LONGALIEN = ITEMS.register("longalien", () -> new SpawnEggItem(EntityType.HUSK, 0x566B57, 0xA8C775, new Item.Properties()));
+    public static final RegistryObject<Item> LONGLAIENGUARD = ITEMS.register("longlaienguard", () -> new SpawnEggItem(EntityType.VINDICATOR, 0x263C4C, 0xD3A22B, new Item.Properties()));
+    public static final RegistryObject<Item> ZOMBIEALIEN = ITEMS.register("zombiealien", () -> new SpawnEggItem(EntityType.ZOMBIE, 0x315A46, 0x79B54A, new Item.Properties()));
+    public static final RegistryObject<Item> UFO = ITEMS.register("ufo", () -> new SpawnEggItem(EntityType.PHANTOM, 0x263B58, 0x63DFFF, new Item.Properties()));
 
     public static final RegistryObject<CreativeModeTab> MAIN_TAB = TABS.register("main", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.alien_craft"))

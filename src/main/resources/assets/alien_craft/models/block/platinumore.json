@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "alien_craft:blocks/platinumore",
-    "up": "alien_craft:blocks/platinumore",
-    "north": "alien_craft:blocks/platinumore",
-    "east": "alien_craft:blocks/platinumore",
-    "south": "alien_craft:blocks/platinumore",
-    "west": "alien_craft:blocks/platinumore",
-    "particle": "alien_craft:blocks/platinumore"
+    "down": "alien_craft:block/platinumore",
+    "up": "alien_craft:block/platinumore",
+    "north": "alien_craft:block/platinumore",
+    "east": "alien_craft:block/platinumore",
+    "south": "alien_craft:block/platinumore",
+    "west": "alien_craft:block/platinumore",
+    "particle": "alien_craft:block/platinumore"
   }
 }

@@ -1,10 +1,10 @@
 {
   "parent": "alien_craft:custom/warpblock",
   "textures": {
-    "all": "alien_craft:blocks/warpblock",
-    "particle": "alien_craft:blocks/warpblock",
-    "WarpBlock2": "alien_craft:blocks/warpblock2",
-    "planet": "alien_craft:blocks/planet",
-    "WarpBlock": "alien_craft:blocks/warpblock"
+    "all": "alien_craft:block/warpblock",
+    "particle": "alien_craft:block/warpblock",
+    "WarpBlock2": "alien_craft:block/warpblock2",
+    "planet": "alien_craft:block/planet",
+    "WarpBlock": "alien_craft:block/warpblock"
   }
 }

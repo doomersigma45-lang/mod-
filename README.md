@@ -1,6 +1,6 @@
 # Alien Craft for Forge 1.20.1
 
-This is a source rebuild of the supplied AlienCraft 1.4.1 Minecraft 1.12.2 JAR. The JAR contains compiled MCreator classes and assets, not the original editable project. The rebuild retains the original resource pack, selected blocks and items, core crafting recipes, mod ID, creator credits, and the included MCreator distribution license.
+This is a source rebuild of the supplied AlienCraft 1.4.1 Minecraft 1.12.2 JAR. The JAR contains compiled MCreator classes and assets, not the original editable project. The rebuild retains the original models, textures, structures, selected blocks and items, core crafting recipes, mod ID, creator credits, and the included MCreator distribution license. Legacy audio files are omitted from this GitHub build; the old sound playback behavior is not implemented in the port.
 
 ## Build
 

@@ -1,6 +1,5 @@
 package net.mcreator.alien_craft;
 
-import java.util.Set;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -10,7 +9,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.RelativeMovement;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -45,7 +43,7 @@ public class AlienPlanetSelectorBlock extends Block {
                     template.placeInWorld(target, new BlockPos(0, y, 0), new BlockPos(0, y, 0),
                             new StructurePlaceSettings(), RandomSource.create(), Block.UPDATE_CLIENTS));
         }
-        serverPlayer.teleportTo(target, 0.5D, y, 0.5D, Set.of(), serverPlayer.getYRot(), serverPlayer.getXRot());
+        serverPlayer.teleportTo(target, 0.5D, y, 0.5D, serverPlayer.getYRot(), serverPlayer.getXRot());
         return InteractionResult.CONSUME;
     }
 }

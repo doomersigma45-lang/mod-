@@ -83,7 +83,7 @@ public final class AlienCraft {
     public static final RegistryObject<Item> PLATINUMPLATE = item("platinumplate");
     public static final RegistryObject<Item> UFOICON = item("ufoicon");
     public static final RegistryObject<Item> WOW = item("wow");
-    public static final RegistryObject<Item> ALIENSWORD = ITEMS.register("aliensword", () -> new SwordItem(Tiers.DIAMOND, 20, -2.4f, new Item.Properties()));
+    public static final RegistryObject<Item> ALIENSWORD = ITEMS.register("aliensword", () -> new SwordItem(Tiers.DIAMOND, 21, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> LIGHTNINGSWORD = ITEMS.register("lightningsword", () -> new SwordItem(Tiers.DIAMOND, 4, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> SPACESWORD2 = ITEMS.register("spacesword2", () -> new SwordItem(Tiers.NETHERITE, 5, -2.4f, new Item.Properties()));
     public static final RegistryObject<EntityType<AlienEntity>> ALIEN_ENTITY = alienEntity("alien");

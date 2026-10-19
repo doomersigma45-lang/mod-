@@ -3,6 +3,8 @@ package net.mcreator.alien_craft.client;
 import net.mcreator.alien_craft.AlienCraft;
 import net.mcreator.alien_craft.UfoEntity;
 import net.minecraft.client.model.EntityModel;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
@@ -34,5 +36,10 @@ public class UfoModel extends EntityModel<UfoEntity> {
     @Override public void setupAnim(UfoEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         saucer.yRot = netHeadYaw * ((float)Math.PI / 180F);
         saucer.xRot = (float)Math.sin(ageInTicks * 0.08F) * 0.04F;
+    }
+
+    @Override public void renderToBuffer(PoseStack poseStack, VertexConsumer buffer, int packedLight, int packedOverlay,
+                                         float red, float green, float blue, float alpha) {
+        saucer.render(poseStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
     }
 }

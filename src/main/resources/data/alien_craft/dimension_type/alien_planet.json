@@ -6,6 +6,8 @@
   "respawn_anchor_works": false,
   "has_skylight": true,
   "has_ceiling": false,
+  "piglin_safe": false,
+  "has_raids": true,
   "ambient_light": 0.0,
   "fixed_time": null,
   "effects": "minecraft:overworld",

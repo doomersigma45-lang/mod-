@@ -14,8 +14,8 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.phys.BlockHitResult;
 
 /** The selector moves the player between the overworld and the Alien Planet. */
@@ -27,10 +27,33 @@ public class AlienPlanetSelectorBlock extends Block {
     private static final String RETURN_X = "alien_craft_return_x";
     private static final String RETURN_Z = "alien_craft_return_z";
     private static final String RETURN_YAW = "alien_craft_return_yaw";
-    private static final double ALIEN_LANDING_X = 4096.0D;
-    private static final double ALIEN_LANDING_Z = 4096.0D;
+    private static final double ALIEN_LANDING_X = 8192.0D;
+    private static final double ALIEN_LANDING_Z = 8192.0D;
+    private static final int LANDING_FLOOR_Y = 63;
+    private static final int LANDING_PLAYER_Y = LANDING_FLOOR_Y + 1;
 
     public AlienPlanetSelectorBlock(Properties properties) { super(properties); }
+
+    private static void prepareLandingPad(ServerLevel level, int centerX, int centerZ) {
+        // Force the landing chunk to exist before placing the pad. This also covers
+        // flat or void worldgen settings that fail to provide terrain.
+        level.getChunk(centerX >> 4, centerZ >> 4);
+        BlockState floor = AlienCraft.ALIENFLOOR.get().defaultBlockState();
+        BlockState foundation = AlienCraft.ASTEROIDBLOCK.get().defaultBlockState();
+        for (int x = centerX - 2; x <= centerX + 2; x++) {
+            for (int z = centerZ - 2; z <= centerZ + 2; z++) {
+                level.setBlock(new BlockPos(x, LANDING_FLOOR_Y, z), floor, Block.UPDATE_ALL);
+                for (int y = LANDING_FLOOR_Y - 1; y >= LANDING_FLOOR_Y - 3; y--) {
+                    level.setBlock(new BlockPos(x, y, z), foundation, Block.UPDATE_ALL);
+                }
+                level.setBlock(new BlockPos(x, LANDING_FLOOR_Y - 4, z),
+                        Blocks.BEDROCK.defaultBlockState(), Block.UPDATE_ALL);
+                for (int y = LANDING_PLAYER_Y; y <= LANDING_PLAYER_Y + 3; y++) {
+                    level.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL);
+                }
+            }
+        }
+    }
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player,
@@ -75,10 +98,12 @@ public class AlienPlanetSelectorBlock extends Block {
             return InteractionResult.FAIL;
         }
 
-        int blockX = BlockPos.containing(x, 0.0D, z).getX();
-        int blockZ = BlockPos.containing(x, 0.0D, z).getZ();
-        int y = target.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, blockX, blockZ);
-        serverPlayer.teleportTo(target, x + 0.5D, y, z + 0.5D, Set.of(), yaw, serverPlayer.getXRot());
+        if (!returning) {
+            prepareLandingPad(target, BlockPos.containing(x, 0.0D, z).getX(),
+                    BlockPos.containing(x, 0.0D, z).getZ());
+        }
+        serverPlayer.teleportTo(target, x + 0.5D, returning ? target.getSharedSpawnPos().getY() : LANDING_PLAYER_Y,
+                z + 0.5D, Set.of(), yaw, serverPlayer.getXRot());
         serverPlayer.displayClientMessage(Component.literal(returning
                 ? "Você voltou ao seu mundo."
                 : "Você chegou ao Planeta Alienígena."), true);

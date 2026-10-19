@@ -1,0 +1,38 @@
+{
+  "carvers": {},
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 2425139,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "alien_craft:alienvoice",
+      "tick_delay": 6000
+    },
+    "sky_color": 3145787,
+    "water_color": 32814,
+    "water_fog_color": 1048593
+  },
+  "features": [[], [], [], [], [], [], [], [], [], [], []],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      { "type": "alien_craft:ufo", "maxCount": 1, "minCount": 1, "weight": 2 }
+    ],
+    "misc": [],
+    "monster": [
+      { "type": "alien_craft:alien", "maxCount": 3, "minCount": 1, "weight": 30 },
+      { "type": "alien_craft:aliencivil", "maxCount": 3, "minCount": 1, "weight": 20 },
+      { "type": "alien_craft:longalien", "maxCount": 2, "minCount": 1, "weight": 15 },
+      { "type": "alien_craft:longlaienguard", "maxCount": 2, "minCount": 1, "weight": 10 },
+      { "type": "alien_craft:zombiealien", "maxCount": 3, "minCount": 1, "weight": 15 }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.5
+}

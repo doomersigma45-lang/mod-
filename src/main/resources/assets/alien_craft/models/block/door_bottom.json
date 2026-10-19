@@ -1,7 +1,0 @@
-{
-  "textures": {
-    "bottom": "alien_craft:block/door1",
-    "top": "alien_craft:block/holodoortop"
-  },
-  "parent": "minecraft:block/door_bottom"
-}

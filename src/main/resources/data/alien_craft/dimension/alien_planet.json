@@ -1,8 +1,17 @@
 {
   "type": "alien_craft:alien_planet",
   "generator": {
-    "type": "minecraft:noise",
-    "biome_source": { "type": "minecraft:fixed", "biome": "minecraft:plains" },
-    "settings": "minecraft:overworld"
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "alien_craft:alien_planet",
+      "features": false,
+      "lakes": false,
+      "layers": [
+        { "block": "minecraft:bedrock", "height": 1 },
+        { "block": "alien_craft:asteroidblock", "height": 3 },
+        { "block": "alien_craft:alienfloor", "height": 3 }
+      ],
+      "structure_overrides": []
+    }
   }
 }

@@ -16,13 +16,10 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BarrelBlock;
-import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -72,8 +69,6 @@ public final class AlienCraft {
     public static final RegistryObject<Block> TUBE = block("tube", 2.0f);
     public static final RegistryObject<Block> ALIENPLANETSELECTOR = BLOCKS.register("alienplanetselector", () -> new AlienPlanetSelectorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).strength(3.0f)));
     public static final RegistryObject<Item> ALIENPLANETSELECTOR_ITEM = ITEMS.register("alienplanetselector", () -> new BlockItem(ALIENPLANETSELECTOR.get(), new Item.Properties()));
-    public static final RegistryObject<Block> DOOR = BLOCKS.register("door", () -> new DoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).sound(SoundType.WOOD).strength(3.0f).noOcclusion(), BlockSetType.OAK));
-    public static final RegistryObject<Item> DOOR_ITEM = ITEMS.register("door", () -> new BlockItem(DOOR.get(), new Item.Properties()));
     public static final RegistryObject<Item> ALIENFLOORSTAIRS_ITEM = ITEMS.register("alienfloorstairs", () -> new BlockItem(ALIENFLOORSTAIRS.get(), new Item.Properties()));
     public static final RegistryObject<Item> ALIENFLOWER_ITEM = ITEMS.register("alienflower", () -> new BlockItem(ALIENFLOWER.get(), new Item.Properties()));
 

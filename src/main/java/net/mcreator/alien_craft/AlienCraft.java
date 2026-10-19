@@ -22,6 +22,7 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -81,11 +82,11 @@ public final class AlienCraft {
     private static RegistryObject<EntityType<AlienEntity>> alienEntity(String id) {
         return ENTITIES.register(id, () -> EntityType.Builder.of(AlienEntity::new, MobCategory.MONSTER).sized(0.7f, 1.95f).clientTrackingRange(8).build(id));
     }
-    public static final RegistryObject<Item> ALIEN = ITEMS.register("alien", () -> new SpawnEggItem(ALIEN_ENTITY.get(), 0x3A164A, 0xA9F000, new Item.Properties()));
-    public static final RegistryObject<Item> ALIENCIVIL = ITEMS.register("aliencivil", () -> new SpawnEggItem(ALIENCIVIL_ENTITY.get(), 0x7352A0, 0xC9B3E8, new Item.Properties()));
-    public static final RegistryObject<Item> LONGALIEN = ITEMS.register("longalien", () -> new SpawnEggItem(LONGALIEN_ENTITY.get(), 0x566B57, 0xA8C775, new Item.Properties()));
-    public static final RegistryObject<Item> LONGLAIENGUARD = ITEMS.register("longlaienguard", () -> new SpawnEggItem(LONGLAIENGUARD_ENTITY.get(), 0x263C4C, 0xD3A22B, new Item.Properties()));
-    public static final RegistryObject<Item> ZOMBIEALIEN = ITEMS.register("zombiealien", () -> new SpawnEggItem(ZOMBIEALIEN_ENTITY.get(), 0x315A46, 0x79B54A, new Item.Properties()));
+    public static final RegistryObject<Item> ALIEN = ITEMS.register("alien", () -> new ForgeSpawnEggItem(ALIEN_ENTITY, 0x3A164A, 0xA9F000, new Item.Properties()));
+    public static final RegistryObject<Item> ALIENCIVIL = ITEMS.register("aliencivil", () -> new ForgeSpawnEggItem(ALIENCIVIL_ENTITY, 0x7352A0, 0xC9B3E8, new Item.Properties()));
+    public static final RegistryObject<Item> LONGALIEN = ITEMS.register("longalien", () -> new ForgeSpawnEggItem(LONGALIEN_ENTITY, 0x566B57, 0xA8C775, new Item.Properties()));
+    public static final RegistryObject<Item> LONGLAIENGUARD = ITEMS.register("longlaienguard", () -> new ForgeSpawnEggItem(LONGLAIENGUARD_ENTITY, 0x263C4C, 0xD3A22B, new Item.Properties()));
+    public static final RegistryObject<Item> ZOMBIEALIEN = ITEMS.register("zombiealien", () -> new ForgeSpawnEggItem(ZOMBIEALIEN_ENTITY, 0x315A46, 0x79B54A, new Item.Properties()));
     public static final RegistryObject<Item> UFO = ITEMS.register("ufo", () -> new SpawnEggItem(EntityType.PHANTOM, 0x263B58, 0x63DFFF, new Item.Properties()));
 
     public static final RegistryObject<CreativeModeTab> MAIN_TAB = TABS.register("main", () -> CreativeModeTab.builder()
@@ -102,3 +103,4 @@ public final class AlienCraft {
         TABS.register(modBus);
     }
 }
+

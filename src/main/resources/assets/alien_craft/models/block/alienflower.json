@@ -1,1 +1,11 @@
-{"parent":"minecraft:block/cross","textures":{"cross":"alien_craft:block/alienflower"}}
+{
+  "parent": "alien_craft:custom/alienflower",
+  "textures": {
+    "all": "alien_craft:block/alienflower",
+    "particle": "alien_craft:block/alienflower",
+    "alienleaves": "alien_craft:block/alienleaves",
+    "AlienPlant2": "alien_craft:block/alienplant2",
+    "AlienPlant1": "alien_craft:block/alienplant1",
+    "alienleaves2": "alien_craft:block/alienleaves2"
+  }
+}

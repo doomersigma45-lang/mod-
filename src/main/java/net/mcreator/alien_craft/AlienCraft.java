@@ -9,6 +9,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.effect.MobEffects;
@@ -21,6 +23,12 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.fml.common.Mod;
@@ -40,6 +48,9 @@ public final class AlienCraft {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
     private static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MOD_ID);
     private static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
+    private static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MOD_ID);
+    public static final RegistryObject<SoundEvent> ALIEN_VOICE = SOUNDS.register("alienvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "alienvoice")));
+    public static final RegistryObject<SoundEvent> UFO_VOICE = SOUNDS.register("helloufo", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(MOD_ID, "helloufo")));
 
     private static RegistryObject<Block> block(String id, float hardness) {
         RegistryObject<Block> result = BLOCKS.register(id, () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).strength(hardness)));
@@ -59,7 +70,8 @@ public final class AlienCraft {
     public static final RegistryObject<Block> BLOCKOFSTEEL = block("blockofsteel", 5.0f);
     public static final RegistryObject<Block> PLATINUMORE = block("platinumore", 3.0f);
     public static final RegistryObject<Block> TUBE = block("tube", 2.0f);
-    public static final RegistryObject<Block> ALIENPLANETSELECTOR = block("alienplanetselector", 3.0f);
+    public static final RegistryObject<Block> ALIENPLANETSELECTOR = BLOCKS.register("alienplanetselector", () -> new AlienPlanetSelectorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).strength(3.0f)));
+    public static final RegistryObject<Item> ALIENPLANETSELECTOR_ITEM = ITEMS.register("alienplanetselector", () -> new BlockItem(ALIENPLANETSELECTOR.get(), new Item.Properties()));
     public static final RegistryObject<Block> DOOR = BLOCKS.register("door", () -> new DoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).sound(SoundType.WOOD).strength(3.0f).noOcclusion(), BlockSetType.OAK));
     public static final RegistryObject<Item> DOOR_ITEM = ITEMS.register("door", () -> new BlockItem(DOOR.get(), new Item.Properties()));
     public static final RegistryObject<Item> ALIENFLOORSTAIRS_ITEM = ITEMS.register("alienfloorstairs", () -> new BlockItem(ALIENFLOORSTAIRS.get(), new Item.Properties()));
@@ -79,6 +91,7 @@ public final class AlienCraft {
     public static final RegistryObject<EntityType<AlienEntity>> LONGALIEN_ENTITY = alienEntity("longalien");
     public static final RegistryObject<EntityType<AlienEntity>> LONGLAIENGUARD_ENTITY = alienEntity("longlaienguard");
     public static final RegistryObject<EntityType<AlienEntity>> ZOMBIEALIEN_ENTITY = alienEntity("zombiealien");
+    public static final RegistryObject<EntityType<UfoEntity>> UFO_ENTITY = ENTITIES.register("ufo", () -> EntityType.Builder.of(UfoEntity::new, MobCategory.CREATURE).sized(1.4f, 0.8f).clientTrackingRange(10).build("ufo"));
     private static RegistryObject<EntityType<AlienEntity>> alienEntity(String id) {
         return ENTITIES.register(id, () -> EntityType.Builder.of(AlienEntity::new, MobCategory.MONSTER).sized(0.7f, 1.95f).clientTrackingRange(8).build(id));
     }
@@ -87,7 +100,7 @@ public final class AlienCraft {
     public static final RegistryObject<Item> LONGALIEN = ITEMS.register("longalien", () -> new ForgeSpawnEggItem(LONGALIEN_ENTITY, 0x566B57, 0xA8C775, new Item.Properties()));
     public static final RegistryObject<Item> LONGLAIENGUARD = ITEMS.register("longlaienguard", () -> new ForgeSpawnEggItem(LONGLAIENGUARD_ENTITY, 0x263C4C, 0xD3A22B, new Item.Properties()));
     public static final RegistryObject<Item> ZOMBIEALIEN = ITEMS.register("zombiealien", () -> new ForgeSpawnEggItem(ZOMBIEALIEN_ENTITY, 0x315A46, 0x79B54A, new Item.Properties()));
-    public static final RegistryObject<Item> UFO = ITEMS.register("ufo", () -> new SpawnEggItem(EntityType.PHANTOM, 0x263B58, 0x63DFFF, new Item.Properties()));
+    public static final RegistryObject<Item> UFO = ITEMS.register("ufo", () -> new ForgeSpawnEggItem(UFO_ENTITY, 0x263B58, 0x63DFFF, new Item.Properties()));
 
     public static final RegistryObject<CreativeModeTab> MAIN_TAB = TABS.register("main", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.alien_craft"))
@@ -101,6 +114,6 @@ public final class AlienCraft {
         ENTITIES.register(modBus);
         ITEMS.register(modBus);
         TABS.register(modBus);
+        SOUNDS.register(modBus);
     }
 }
-

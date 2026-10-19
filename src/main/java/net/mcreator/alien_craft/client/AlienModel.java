@@ -39,7 +39,7 @@ public final class AlienModel extends EntityModel<AlienEntity> {
         PartDefinition root = mesh.getRoot();
         PartDefinition bone = root.addOrReplaceChild("bone", CubeListBuilder.create()
                 .texOffs(7, 1).addBox(1.0F, -19.0F, -1.0F, 1F, 6F, 2F)
-                .texOffs(0, 1).addBox(-1.0F, -13.0F, -3.0F, 4F, 5F, 6F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+                .texOffs(0, 1).addBox(-1.0F, -13.0F, -3.0F, 4F, 5F, 6F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 0.0F, 0.0F));
         PartDefinition Rarm = bone.addOrReplaceChild("Rarm", CubeListBuilder.create()
                 .texOffs(27, 29).addBox(0.0F, 7.0F, 0.0F, 1F, 1F, 0F)
                 .texOffs(26, 30).addBox(-1.0F, 7.0F, 1.0F, 2F, 1F, 0F)
@@ -68,7 +68,7 @@ public final class AlienModel extends EntityModel<AlienEntity> {
         PartDefinition bone = root.addOrReplaceChild("bone", CubeListBuilder.create()
                 .texOffs(17, 15).addBox(1.0F, -27.0F, -1.0F, 1F, 6F, 2F)
                 .texOffs(0, 0).addBox(-1.0F, -21.0F, -3.0F, 4F, 5F, 6F)
-                .texOffs(1, 2).addBox(0.0F, -16.0F, -2.0F, 3F, 4F, 4F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+                .texOffs(1, 2).addBox(0.0F, -16.0F, -2.0F, 3F, 4F, 4F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 0.0F, 0.0F));
         PartDefinition Rarm = bone.addOrReplaceChild("Rarm", CubeListBuilder.create()
                 .texOffs(13, 4).addBox(-1.0F, 0.0F, 0.0F, 2F, 10F, 1F)
                 .texOffs(26, 30).addBox(-1.0F, 10.0F, 1.0F, 2F, 1F, 0F)
@@ -97,7 +97,7 @@ public final class AlienModel extends EntityModel<AlienEntity> {
         PartDefinition bone = root.addOrReplaceChild("bone", CubeListBuilder.create()
                 .texOffs(7, 1).addBox(1.0F, -27.0F, -1.0F, 1F, 6F, 2F)
                 .texOffs(0, 1).addBox(-1.0F, -21.0F, -3.0F, 4F, 5F, 6F)
-                .texOffs(0, 1).addBox(0.0F, -16.0F, -2.0F, 3F, 4F, 4F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+                .texOffs(0, 1).addBox(0.0F, -16.0F, -2.0F, 3F, 4F, 4F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 0.0F, 0.0F));
         PartDefinition Rarm = bone.addOrReplaceChild("Rarm", CubeListBuilder.create()
                 .texOffs(27, 29).addBox(0.0F, 10.0F, 0.0F, 1F, 1F, 0F)
                 .texOffs(26, 30).addBox(-1.0F, 10.0F, 1.0F, 2F, 1F, 0F)
@@ -126,7 +126,7 @@ public final class AlienModel extends EntityModel<AlienEntity> {
         PartDefinition bone = root.addOrReplaceChild("bone", CubeListBuilder.create()
                 .texOffs(17, 15).addBox(1.0F, -27.0F, -1.0F, 1F, 6F, 2F)
                 .texOffs(0, 0).addBox(-1.0F, -21.0F, -3.0F, 4F, 5F, 6F)
-                .texOffs(1, 2).addBox(0.0F, -16.0F, -2.0F, 3F, 4F, 4F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+                .texOffs(1, 2).addBox(0.0F, -16.0F, -2.0F, 3F, 4F, 4F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 0.0F, 0.0F));
         PartDefinition Rarm = bone.addOrReplaceChild("Rarm", CubeListBuilder.create()
                 .texOffs(0, 27).addBox(-13.0F, 10.0F, 0.0F, 11F, 1F, 1F)
                 .texOffs(12, 7).addBox(-2.0F, 10.0F, 0.0F, 3F, 1F, 1F)
@@ -157,7 +157,7 @@ public final class AlienModel extends EntityModel<AlienEntity> {
         PartDefinition bone = root.addOrReplaceChild("bone", CubeListBuilder.create()
                 .texOffs(17, 15).addBox(1.0F, -27.0F, -1.0F, 1F, 6F, 2F)
                 .texOffs(0, 0).addBox(-1.0F, -21.0F, -3.0F, 4F, 5F, 6F)
-                .texOffs(18, 5).addBox(0.0F, -16.0F, -2.0F, 3F, 4F, 4F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+                .texOffs(18, 5).addBox(0.0F, -16.0F, -2.0F, 3F, 4F, 4F), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 0.0F, 0.0F));
         PartDefinition Rarm = bone.addOrReplaceChild("Rarm", CubeListBuilder.create()
                 .texOffs(13, 4).addBox(-1.0F, 0.0F, 0.0F, 2F, 10F, 1F)
                 .texOffs(26, 30).addBox(-1.0F, 10.0F, 1.0F, 2F, 1F, 0F)
@@ -189,4 +189,3 @@ public final class AlienModel extends EntityModel<AlienEntity> {
     }
     @Override public void renderToBuffer(PoseStack pose, VertexConsumer buffer, int light, int overlay, float red, float green, float blue, float alpha) { bone.render(pose, buffer, light, overlay, red, green, blue, alpha); }
 }
-

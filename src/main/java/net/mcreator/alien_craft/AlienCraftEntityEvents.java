@@ -17,5 +17,6 @@ public final class AlienCraftEntityEvents {
         event.put(AlienCraft.LONGALIEN_ENTITY.get(), attributes);
         event.put(AlienCraft.LONGLAIENGUARD_ENTITY.get(), attributes);
         event.put(AlienCraft.ZOMBIEALIEN_ENTITY.get(), attributes);
+        event.put(AlienCraft.UFO_ENTITY.get(), UfoEntity.createAttributes().build());
     }
 }

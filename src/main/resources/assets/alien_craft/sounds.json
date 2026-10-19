@@ -1,0 +1,65 @@
+{
+  "alienvoice": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "alien_craft:alienv2",
+        "stream": false
+      }
+    ]
+  },
+  "ufosound": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "alien_craft:ufosound",
+        "stream": false
+      }
+    ]
+  },
+  "aliensound": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "alien_craft:aliensound",
+        "stream": false
+      }
+    ]
+  },
+  "signal": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "alien_craft:signal_",
+        "stream": true
+      }
+    ]
+  },
+  "alienmusic": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "alien_craft:ufomusic",
+        "stream": true
+      }
+    ]
+  },
+  "comeufo": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "alien_craft:ufo1",
+        "stream": false
+      }
+    ]
+  },
+  "helloufo": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "alien_craft:ufo2",
+        "stream": false
+      }
+    ]
+  }
+}

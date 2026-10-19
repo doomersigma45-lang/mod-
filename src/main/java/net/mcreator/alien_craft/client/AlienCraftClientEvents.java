@@ -21,6 +21,7 @@ public final class AlienCraftClientEvents {
         event.registerEntityRenderer(AlienCraft.LONGALIEN_ENTITY.get(), context -> new AlienRenderer(context, AlienModel.LONG_LAYER, AlienModel.Kind.LONG, "alienskin"));
         event.registerEntityRenderer(AlienCraft.LONGLAIENGUARD_ENTITY.get(), context -> new AlienRenderer(context, AlienModel.GUARD_LAYER, AlienModel.Kind.GUARD, "aliensoldier3"));
         event.registerEntityRenderer(AlienCraft.ZOMBIEALIEN_ENTITY.get(), context -> new AlienRenderer(context, AlienModel.ZOMBIE_LAYER, AlienModel.Kind.ZOMBIE, "zombiealien"));
+        event.registerEntityRenderer(AlienCraft.UFO_ENTITY.get(), UfoRenderer::new);
     }
 
     @SubscribeEvent
@@ -30,6 +31,7 @@ public final class AlienCraftClientEvents {
         event.registerLayerDefinition(AlienModel.LONG_LAYER, AlienModel::createLongLayer);
         event.registerLayerDefinition(AlienModel.GUARD_LAYER, AlienModel::createGuardLayer);
         event.registerLayerDefinition(AlienModel.ZOMBIE_LAYER, AlienModel::createZombieLayer);
+        event.registerLayerDefinition(UfoModel.LAYER, UfoModel::createLayer);
     }
 
     private static final class AlienRenderer extends MobRenderer<AlienEntity, AlienModel> {
@@ -45,5 +47,10 @@ public final class AlienCraftClientEvents {
             return texture;
         }
     }
-}
 
+    private static final class UfoRenderer extends MobRenderer<net.mcreator.alien_craft.UfoEntity, UfoModel> {
+        private static final ResourceLocation TEXTURE = new ResourceLocation(AlienCraft.MOD_ID, "textures/ufo.png");
+        private UfoRenderer(EntityRendererProvider.Context context) { super(context, new UfoModel(context.bakeLayer(UfoModel.LAYER)), 0.6F); }
+        @Override public ResourceLocation getTextureLocation(net.mcreator.alien_craft.UfoEntity entity) { return TEXTURE; }
+    }
+}
